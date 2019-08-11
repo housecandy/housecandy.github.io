@@ -22,8 +22,11 @@ nav ul {
 }
 nav ul li {
 	display: inline;
-	color:#39819d;
 	padding: 5px 30px 5px 30px;
+}
+
+nav ul li a {
+	color:#39819d;
 }
 
 a:link {
