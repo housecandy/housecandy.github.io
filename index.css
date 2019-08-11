@@ -35,6 +35,10 @@ a:hover {
 	background-color: #39819a;
 }
 
+a:visited {
+	text-decoration: none;
+}
+
 .image img{
 	border: none;
 }
