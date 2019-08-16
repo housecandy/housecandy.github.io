@@ -2,21 +2,25 @@ body {
 	font-family:     Verdana, Geneva, Arial, sans-serif;
 	font-size:large;
 	font-color:#39819d;
-	background-color: #2a2a2a;
 }
 
-header h1 {
-	margin-top: 30px;
-	font-size:1.8em;
-	text-align: center;
-	color: #3a8eb7;
+header {
+	background-image: url(images/background.jpg);
+	height: 350px;
+	background-repeat: no-repeat;
 }
 
-nav {
-	margin: 10px 10px 0px 10px;
+header img {
+
+}
+
+
+#navor {
+	float: right;
 }
 nav ul {
-	margin:0px;
+	margin:10px 30px 10px 10px;
+	background:white;
 	list-style-type: none;
 	padding: 5px 0px 5px 0px;
 	text-align: center;
