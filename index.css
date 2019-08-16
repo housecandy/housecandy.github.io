@@ -1,7 +1,11 @@
 body {
 	font-family:     Verdana, Geneva, Arial, sans-serif;
 	font-size:large;
+<<<<<<< HEAD
 	font-color:#39819d;
+=======
+	background-color: #2a2a2a;
+>>>>>>> 94d0dd2746cf8b74321edbaa4c16918cea4ecc24
 }
 
 header {
@@ -26,8 +30,12 @@ nav ul {
 	text-align: center;
 }
 nav ul li {
-	display: inline; 
+	display: inline;
 	padding: 5px 30px 5px 30px;
+}
+
+nav ul li a {
+	color:#39819d;
 }
 
 a:link {
@@ -37,6 +45,10 @@ a:link {
 a:hover {
 	font-weight: bold;
 	background-color: #39819a;
+}
+
+a:visited {
+	text-decoration: none;
 }
 
 .image img{
