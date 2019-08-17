@@ -36,20 +36,15 @@ nav ul li {
 
 nav ul li a {
 	color:#39819d;
-}
-
-a:link {
 	text-decoration: none;
 }
+
 
 a:hover {
 	font-weight: bold;
 	background-color: #39819a;
 }
 
-a:visited {
-	text-decoration: none;
-}
 
 .image img{
 	border: none;
