@@ -4,6 +4,8 @@ window.onload = function(){
 
 	botton.onclick = previewHandler;
 
+	makeImage();
+
 };
 
 
@@ -49,6 +51,7 @@ function previewHandler() {
 	}
 
 	drawText(canvas, context);
+	drawLogo(canvas, context);
 
 }
 
@@ -133,3 +136,17 @@ function drawText(canvas, context) {
 	context.fillText("and all I got was this shirt", canvas.width-20, canvas.height-30);
 }
 
+function drawLogo(convas, context) {
+	var imageLogo = new Image();
+	imageLogo.src = "../../images/logo.png";
+	imageLogo.onload = function() {
+		context.drawImage(imageLogo, 20, 120);
+	};
+}
+
+function makeImage() {
+	var canvas = document.getElementById("tshirtCanvas");
+	canvas.onclick = function() {
+		window.location = canvas.toDataURL("../../storage/png");
+	};
+}
