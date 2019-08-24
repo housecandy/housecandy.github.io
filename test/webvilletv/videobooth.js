@@ -26,7 +26,7 @@ window.onload = function() {
 
 	video.addEventListener("ended", endedHandler, false);
 	video.addEventListener("play", processFrame, false);
-	video.addEventListener("error", errorHandler, flase);
+	video.addEventListener("error", errorHandler, false);
 }
 
 function errorHandler() {
