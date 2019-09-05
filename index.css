@@ -58,7 +58,7 @@ ul.nav_list {
 
 .nav_item {
 	text-decoration: none;
-	
+	text-align: center;
 	float: left;
 	margin: 0;
 	padding: 0 15px;
@@ -67,8 +67,8 @@ ul.nav_list {
 .nav_item a {
 	display: block;
 	text-decoration: none;
-	height: 88px;
-	line-height: 88px;
+	height: 58px;
+	line-height: 58px;
 	color: white;
 }
 
