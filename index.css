@@ -20,6 +20,7 @@ header {
 	width: 100%;
 	background: center no-repeat;
 	background-size: cover;
+	min-width: 500px;
 }
 
 header:before {
@@ -36,6 +37,8 @@ header:before {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	min-height: 0;
+
 }
 
 .top a {
@@ -48,12 +51,14 @@ header:before {
 
 nav {
 	margin: 15px 0;
+	min-width: 352px;
 }
 
 ul.nav_list {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+
 }
 
 .nav_item {
@@ -107,4 +112,42 @@ h1 {
 	font-size: 16px;
 	color:white;
 	font-weight: 300;
+}
+
+.page_main {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px auto;
+	padding:0 15px;
+	position: relative;
+	width:1170px;
+}
+
+.page_content {
+	flex: 1;
+
+}
+
+.page_posts {
+	margin: auto;
+}
+
+.page_post {
+	float: left;
+	width:400px;
+	margin:20px;
+	box-shadow: 0 0 20px rgba(0,0,0,.15);
+
+}
+
+.mini_info {
+	text-align: center;
+	padding:15px;
+}
+
+aside {
+	width:260px;
+	margin-top: 0;
+	box-shadow: 0 0 20px rgba(0,0,0,.15);
+	text-align: center;
 }

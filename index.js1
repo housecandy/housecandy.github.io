@@ -1,0 +1,4 @@
+window.onload = function() {
+	var clearLoading = document.getElementById("loading");
+	clearLoading.classList.add("js_hidden");
+}
