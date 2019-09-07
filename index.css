@@ -12,6 +12,28 @@ body {
 	box-sizing: border-box;
 }
 
+.page_loading {
+	position: relative;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.page_loading img {
+	width: 200px;
+	height: 150px;
+}
+.page_loading p {
+	font-size: 20px;
+	color: rgba(40,50,160,.9);
+}
+
+.js_hidden {
+	display: none!important;
+}
+
 header {
 	position: relative;
 	height: 350px;
@@ -117,10 +139,11 @@ h1 {
 .page_main {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0px auto;
-	padding:0 15px;
+	margin: 0 auto;
+	padding:0;
 	position: relative;
-	width:1170px;
+	justify-content: center;
+	width: 920px;
 }
 
 .page_content {
@@ -134,8 +157,8 @@ h1 {
 
 .page_post {
 	float: left;
-	width:400px;
-	margin:20px;
+	width:300px;
+	margin:15px;
 	box-shadow: 0 0 20px rgba(0,0,0,.15);
 
 }
