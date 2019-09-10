@@ -250,13 +250,9 @@ aside {
     }
 	.top {
 		width:100%;
-		overflow: hidden;
+		
 	}
 
-	.nav {
-		min-width: 0;
-		z-index: 1000;
-	}
 
 	.page_info {
 		width: 100%;
@@ -265,7 +261,7 @@ aside {
 	nav {
 		margin: 15px 0;
 		min-width: 0;
-		padding-right: 15px;
+		padding-right: 10px;
 	}
 
 	.nav_list {
@@ -276,6 +272,7 @@ aside {
 
 	.nav_item {
 		float:none;
+		padding: 0;
 		width: 100%;
 	}
 
@@ -322,19 +319,24 @@ aside {
 
 }
 
+.js_scroll {
+	background-color: rgba(40,40,40,.7);
+	height: 70px;
+}
+
+.js_nav_open {
+	background-color: rgba(40,40,40,.7);
+}
+
 .js_open {
 	display: block;
 	position: absolute;
-	top: 75%;
-	right: -10px;
+	top: 100%;
+	right: 0;
 	width: 100%;
 	text-align: right;
 	border: 1px solid rgba(255,255,255,.1);
-	margin: 0%;
+	margin: 0;
 	padding: 0;
 }
 
-.js_scroll {
-	background-color: rgba(40,40,40,.7);
-	height: 60px;
-}
