@@ -8,12 +8,15 @@
   url('//at.alicdn.com/t/font_1395987_mn9moskk4c.svg#iconfont') format('svg');
 }
 
+html {
+	font-size: 100px;
+}
 
 body {
 	margin: 0;
 	padding: 0;
 	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,"PingFang SC","Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","Microsoft Sans Serif","WenQuanYi Micro Hei",sans;
-	font-size:14px;
+	font-size:.14rem;
 	color:#666;
 	line-height:1.7;
 	background-color:#fff;
@@ -40,7 +43,7 @@ body {
 	height: 150px;
 }
 .page_loading p {
-	font-size: 20px;
+	font-size: .2rem;
 	color: rgba(40,50,160,.9);
 }
 
@@ -147,7 +150,7 @@ ul.nav_list {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: .3rem;
 	font-weight: 700;
 	line-height: 1.1;
 	margin: 0;
@@ -165,7 +168,7 @@ h1 {
 }
 
 .info_desc {
-	font-size: 16px;
+	font-size: .16rem;
 	color:white;
 	font-weight: 300;
 }
@@ -217,6 +220,21 @@ aside {
 
 
 @media screen and (max-width:736px) {
+	html {
+		font-size: 70px;
+	}
+
+	.page_loading {
+		position: fixed;
+		display: flex;
+		top: 0;
+		left: 0;
+		min-height: 100vh;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		z-index: 1000000;
+    }
 	.top {
 		width:100%;
 		overflow: hidden;
@@ -244,8 +262,8 @@ aside {
 	}
 
 	.nav_item a {
-		line-height: 20px;
-		height: 20px;
+		line-height: .2rem;
+		height: .2rem;
 		text-align: right;
 	}
 
@@ -255,6 +273,22 @@ aside {
 
 	.iconfont{
 		font-family: iconfont;
+	}
+
+	.page_main {
+		display: block;
+		margin: 0 auto;
+		padding:0;
+		position: relative;
+		width: 100%;
+    }
+
+    .page_post {
+		display: block;
+		width:100%;
+		margin:15px;
+		box-shadow: 0 0 20px rgba(0,0,0,.15);
+
 	}
 
 }
