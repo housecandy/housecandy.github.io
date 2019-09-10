@@ -27,15 +27,12 @@ body {
 }
 
 .page_loading {
-	position: fixed;
 	display: flex;
-	top: 0;
-	left: 0;
 	min-height: 100vh;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	z-index: 1000000;
+	background-color: #fff;
 }
 
 .page_loading img {
@@ -50,7 +47,9 @@ body {
 .js_hidden {
 	display: none!important;
 }
-
+.page {
+	position: relative;
+}
 header {
 	position: relative;
 	height: 350px;
@@ -71,6 +70,7 @@ header::before {
 }
 
 
+
 .fix_top {
 	position: fixed;
 	top: 0;
@@ -80,6 +80,7 @@ header::before {
 	background-color: transparent;
 	
 }
+
 
 .top {
 	margin: 0 auto;
@@ -200,6 +201,16 @@ h1 {
 
 }
 
+.mini_cover {
+	max-height: 160px;
+	overflow: hidden;
+}
+
+.mini_cover img {
+	width: 100%
+	min-height:160px;
+}
+
 .mini_info {
 	text-align: center;
 	padding:15px;
@@ -225,19 +236,26 @@ aside {
 	}
 
 	.page_loading {
-		position: fixed;
+		position: relative;
 		display: flex;
-		top: 0;
-		left: 0;
 		min-height: 100vh;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		z-index: 1000000;
     }
+
+    header {
+    	min-width: 100%;
+    }
 	.top {
 		width:100%;
 		overflow: hidden;
+	}
+
+	.nav {
+		min-width: 0;
+		z-index: 1000;
 	}
 
 	.page_info {
@@ -273,6 +291,7 @@ aside {
 
 	.iconfont{
 		font-family: iconfont;
+		font-style: normal;
 	}
 
 	.page_main {
@@ -283,12 +302,22 @@ aside {
 		width: 100%;
     }
 
+    .page_posts {
+    	
+    	overflow: hidden;
+    }
     .page_post {
 		display: block;
 		width:100%;
 		margin:15px;
 		box-shadow: 0 0 20px rgba(0,0,0,.15);
 
+	}
+
+	aside {
+		display: block;
+		width: 100%;
+		margin: auto;
 	}
 
 }
@@ -303,4 +332,9 @@ aside {
 	border: 1px solid rgba(255,255,255,.1);
 	margin: 0%;
 	padding: 0;
+}
+
+.js_scroll {
+	background-color: rgba(40,40,40,.7);
+	height: 60px;
 }

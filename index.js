@@ -15,6 +15,21 @@ window.onload = function() {
 			}
     	}
     };
+
+    window.onscroll = function() {
+    	var t = document.documentElement.scrollTop || document.body.scrollTop;
+    	var topBack = document.getElementById("top");
+    	if (t > 0) {
+    		if(!topBack.classList.contains("js_scroll")) {
+    			topBack.classList.add("js_scroll")
+    		} 
+    	}
+    	if (t == 0) {
+    		if(topBack.classList.contains("js_scroll")) {
+    			topBack.classList.remove("js_scroll");
+    		}
+    	}
+    }
   
     
 	var navButton = document.getElementById("nav_btn");
