@@ -187,3 +187,13 @@ header {
 	color: black;
 	font-size: .28rem;
 }
+
+@media screen and (max-width:736px) {
+	html {
+		font-size: 70px;
+	}
+
+	header {
+		height: 44.8px;
+	}
+}
