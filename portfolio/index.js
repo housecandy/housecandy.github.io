@@ -4,7 +4,7 @@
                window.webkitRequestAnimationFrame ||
                window.mozRequestAnimationFrame ||
                function( callback ){
-                    window.setTimeout( callback, 1000/2 );
+                    window.setTimeout( callback, 3000/2 );
                };
     })();
     var myCanvas = document.getElementById("canvas");
@@ -16,7 +16,9 @@
     function widthheight(){
         w = myCanvas.width = window.innerWidth;
         h = myCanvas.height = window.innerHeight;
-        num= Math.floor(w*h*0.00008);//点的数量。根据屏幕大小确定
+        myCanvas.style.width = w + "px";
+        myCanvas.style.height = h + "px";
+        num= Math.floor(w*h*0.00007);//点的数量。根据屏幕大小确定
         for(var i = 0;i < num;i++){
             duixiang[i] = {
                 x:Math.random()*w,
@@ -108,7 +110,22 @@
       //  move.y = e.clientY;
     //}
     //console.log(move)//去掉注释 ，可以与背景互动
- 
-    window.onresize = function(){
-        location.reload();
+    var timer = false;
+
+    function onresize() {
+        if(!timer) {
+            requestAnimationFrame(realResize);
+            timer = true;
+        }
     }
+
+    function realResize() {
+    // 你想执行的onscroll事件
+        widthheight();
+        timer = false;
+    }
+
+    window.addEventListener("resize", onresize,false);
+
+
+    
